@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Témpanos - Panadería Artesanal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Panadería Los Témpanos</h1>
+    <nav>
+      <ul>
+        <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#tienda">Tienda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito">Carrito (<span id="carrito-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienvenida">
+      <h2>Bienvenidos a Los Témpanos</h2>
+      <p>Panadería familiar con productos artesanales frescos para toda ocasión.</p>
+    </section>
+
+    <section id="quienes-somos">
+      <h2>Quiénes somos</h2>
+      <p>
+        Somos <strong>Los Témpanos</strong>, una panadería familiar que, con esfuerzo y dedicación, comenzó hace casi un año. Nuestro compromiso es ofrecer productos frescos y artesanales que hagan sentir a nuestros clientes como en casa. Día a día trabajamos para crecer y llevar lo mejor de nuestra tradición panadera a tu mesa.
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="imagenes-galeria">
+        <img src="imagenes/pan1.jpg" alt="Pan artesanal" />
+        <img src="imagenes/facturas1.jpg" alt="Facturas variadas" />
+        <img src="imagenes/bischochos1.jpg" alt="Bischochos" />
+        <img src="imagenes/panmolde.jpg" alt="Pan de molde" />
+      </div>
+    </section>
+
+    <section id="tienda">
+      <h2>Tienda</h2>
+      <div id="productos"></div>
+    </section>
+
+    <section id="carrito" class="carrito-oculto">
+      <h2>Tu carrito</h2>
+      <div id="lista-carrito"></div>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+      <form id="form-pedido">
+        <h3>Finalizar pedido</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required />
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" required />
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Correo para pedidos: <a href="mailto:jonhas22s@gmail.com">jonhas22s@gmail.com</a></p>
+      <p>Teléfono: (opcional)</p>
+      <p>Dirección: (opcional)</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Los Témpanos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
